@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -8,7 +13,7 @@ body {
 
 h2{
     color: goldenrod;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     text-align: center;
     margin-top: 66px;
@@ -141,6 +146,7 @@ h4 {
     gap: 28px;
     cursor: pointer;
     justify-content: center;
+    margin-top: 30px;
     margin-bottom: 45px;
 }
 
@@ -181,6 +187,11 @@ h4 {
     display: block;
 }
 
+.parent {
+    display: flex;
+    flex-direction: column;
+}
+
 .PlanetContents {
     display: flex;
 }
@@ -199,10 +210,6 @@ h4 {
     transform-origin: center center; 
 }
 
-.planetImage:hover {
-    transform: rotateY(180deg); 
-}
-
 .planetInfo {
     color: white;
     font-size: medium;
@@ -218,3 +225,107 @@ h4 {
     font-size: larger;
 }
 
+.astro, .liveUpdates {
+    color: white;
+    margin-left: 160px;
+    margin-bottom: 8px;
+    font-size: larger;
+}
+
+.chatBot {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+.chatArea, .askANDanswer {
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputArea {
+    display: flex;
+    gap: 20px;
+}
+
+#userInput {
+    width: 500px;
+    height: 30px;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 28px;
+    border: 4px solid #B4B4B8;
+    background-color: #B4B4B8;
+    color: black;
+}
+
+.chatIcon img {
+    width: 34px;
+    height: 34px;
+    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+#chatHeading {
+    font-size: medium;
+    margin-top: 34px;
+}
+
+.chatButtons {
+    margin-left: 74px;
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+#sendMsg, #clearChat {
+    width: 100px;
+    height: 40px;
+    background-color: #96C9F4;
+    border-radius: 60px;
+    font-size: medium;
+    border: 2px solid black;
+}
+
+.chatButtons button:hover {
+    animation: buttonColorTransition 5s infinite;
+}
+
+@keyframes buttonColorTransition {
+    0%{
+        background-color: #96C9F4;
+    }
+    50%{
+        background-color: #3FA2F6;
+    }
+    100%{
+        background-color: #96C9F4;
+    }
+}
+
+.userMessage{
+    background-color: #B4B4B8;
+    padding: 10px;
+    margin: 5px 40px;
+    align-self: flex-end;
+    max-width: fit-content;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    border-radius: 30px;
+}
+
+/* .botMessage{
+    background-color: #939185;
+    padding: 10px;
+    margin: 5px 0;
+    align-self: flex-start;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    border-radius: 30px;
+    max-width: 80%;
+} */

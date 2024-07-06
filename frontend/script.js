@@ -16,5 +16,3 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', handleClick);
     });
 });
-
-const rotationRange = document.getElementById("rotationRange");
