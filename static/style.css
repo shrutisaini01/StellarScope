@@ -329,3 +329,75 @@ h4 {
     border-radius: 30px;
     max-width: 80%;
 } */
+
+
+/* Add to your existing style.css */
+
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.chatbot-button button {
+    background-color: #803D3B;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chatbot-button button:hover {
+    background-color: #DBB5B5;
+}
+
+.chatBot {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.chatArea {
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 250px;
+}
+
+.inputArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #333;
+}
+
+#userInput {
+    width: 70%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background-color: #444;
+    color: white;
+}
+
+.chatIcon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.chatIcon img:hover {
+    transform: scale(1.1);
+}

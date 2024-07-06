@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>StellarScope</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logoContainer">
+                <video autoplay loop muted class="video1">
+                    <source src="{{ url_for('static', filename='images/logoVideo.mp4') }}" type="video/mp4">
+                </video>
+            </div>
+            <h2>Explore the cosmos like never before with StellarScope, your gateway to breathtaking 3D visuals and comprehensive insights into galaxies, stars, and constellations.</h2>
+        </div>
+        <h3>Galaxies, Constellations, planets, and much more..</h3>
+        <div class="intro">
+            <div class="videoContainer">
+                <video autoplay loop muted>
+                    <source src="{{ url_for('static', filename='images/myVideo.mp4') }}" type="video/mp4">
+                </video>
+                <div class="videoOverlay">
+                    <h2>Why StellarScope?</h2>
+                    <p>
+                        StellarScope invites explorers of all ages into the captivating world of astronomy. Our platform is crafted to provide a comprehensive and interactive journey through the cosmos, offering real-time updates on celestial events and discoveries. With a user-friendly interface designed for ease of navigation, StellarScope combines educational depth with engaging features, making it an ideal companion for both novices and seasoned astronomers alike. Emphasizing community engagement, we foster a shared passion for the universe, encouraging collaboration and the exchange of astronomical insights. Discover the wonders of the cosmos with StellarScope, where learning about stars, constellations, and the mysteries of space becomes a captivating adventure.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="parent">
+            <div class="explore">
+                <h4>What do you wish to explore?</h4>
+            </div>
+            <div class="buttons">
+                <button id="planet">Planets</button>
+                <button id="star">Stars & Constellations</button>
+                <button id="sun">The sun & moon</button>
+                <button id="cosmo">Cosmos</button>
+            </div>
+
+            <div id="planet1" class="section">
+                <div class="parent">
+                    <div class="PlanetContents">
+                        <div class="planetImage">
+                            <video autoplay loop muted>
+                                <source src="{{ url_for('static', filename='images/mercury.mp4') }}" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="planetInfo">
+                            <h2>Do you know which planet it is?</h2>
+                            <h2>Well, this is Mercury the terrestrial planet!</h2>
+                            <p>Mercury is the smallest and innermost planet in the Solar System, orbiting closest to the Sun. Despite its proximity to the Sun, it's not the hottest planet due to its lack of atmosphere to trap heat—Venus holds that title. With a surface covered in craters and a metallic core that makes up about 85% of its radius, Mercury experiences extreme temperature fluctuations, ranging from -180°C (-290°F) at night to 430°C (800°F) during the day. The planet has no moons and takes about 88 Earth days to complete one orbit around the Sun. Interestingly, its day (rotation period) is about 59 Earth days, meaning a day on Mercury is almost two-thirds as long as its year. Mercury’s surface and geological history are explored by missions like NASA's MESSENGER and ESA's BepiColombo, revealing insights into its composition and the effects of its harsh environment.</p>
+                        </div>
+                    </div>
+                    <div class="astro">Astrological Beliefs</div>
+                    <div class="liveUpdates">Live Updates</div>
+                </div>
+                <div class="parent">
+                    <div class="PlanetContents">
+                        <div class="planetImage">
+                            <video autoplay loop muted>
+                                <source src="{{ url_for('static', filename='images/venus.mp4') }}" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="planetInfo">
+                            <h2>Do you know which planet it is?</h2>
+                            <h2>Well, this is Venus the Inferno!</h2>
+                            <p>Venus, the second planet from the Sun, is often called Earth’s "sister planet" due to its similar size and composition. However, Venus has a thick, toxic atmosphere rich in carbon dioxide, with clouds of sulfuric acid, leading to a runaway greenhouse effect that makes it the hottest planet in our Solar System. Surface temperatures can soar to around 465°C (869°F), hot enough to melt lead. The atmospheric pressure on Venus is over 90 times that of Earth, akin to being 900 meters underwater. The planet rotates very slowly and in the opposite direction to most planets, meaning a day on Venus (243 Earth days) is longer than its year (225 Earth days). Despite its harsh conditions, Venus has been a target for many missions, such as NASA's Magellan and ESA's Venus Express, which have provided detailed maps and data on its volcanic surface and dynamic atmosphere.</p>
+                        </div>
+                    </div>
+                    <div class="astro">Astrological Beliefs</div>
+                    <div class="liveUpdates">Live Updates</div>
+                </div>
+                <div class="parent">
+                    <div class="PlanetContents">
+                        <div class="planetImage">
+                            <video autoplay loop muted>
+                                <source src="{{ url_for('static', filename='images/earth.mp4') }}" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="planetInfo">
+                            <h2>Do you know which planet it is?</h2>
+                            <h2>Well, this is Earth the Blue Planet, our planet!</h2>
+                            <p>Earth, the third planet from the Sun, is uniquely characterized by its abundant liquid water and life-supporting atmosphere. It has a moderate climate, diverse ecosystems, and a robust magnetic field that shields it from harmful solar radiation. Earth's atmosphere, rich in nitrogen and oxygen, allows for the existence of complex life forms. It has one natural satellite, the Moon, which influences tides and stabilizes the planet's axial tilt. Earth’s surface is dynamic, with tectonic plate movements causing earthquakes, volcanic activity, and the creation of mountains. Its biodiversity and life-supporting conditions make Earth a subject of intense scientific study and a cornerstone of human existence.</p>
+                        </div>
+                    </div>
+                    <div class="astro">Astrological Beliefs</div>
+                    <div class="liveUpdates">Live Updates</div>
+                </div>
+                <div class="parent">
+                    <div class="PlanetContents">
+                        <div class="planetImage">
+                            <video autoplay loop muted>
+                                <source src="{{ url_for('static', filename='images/mars.mp4') }}" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="planetInfo">
+                            <h2>Do you know which planet it is?</h2>
+                            <h2>Well, this is Mars the Red Planet!</h2>
+                            <p>Mars, the fourth planet from the Sun, is often called the "Red Planet" due to its iron oxide-rich surface, giving it a reddish appearance. It is a terrestrial planet with a thin atmosphere, composed mostly of carbon dioxide. Mars has the largest volcano in the Solar System, Olympus Mons, and a canyon system, Valles Marineris, that dwarfs Earth's Grand Canyon. The planet experiences seasons similar to Earth due to its tilted axis. Mars has been the focus of many exploration missions, including NASA's rovers like Curiosity and Perseverance, which are studying its surface for signs of past water activity and potential microbial life. Mars’ exploration is driven by the quest to understand its history and assess its potential for future human colonization.</p>
+                        </div>
+                    </div>
+                    <div class="astro">Astrological Beliefs</div>
+                    <div class="liveUpdates">Live Updates</div>
+                </div>
+                <div class="parent">
+                    <div class="PlanetContents">
+                        <div class="planetImage">
+                            <video autoplay loop muted>
+                                <source src="{{ url_for('static', filename='images/jupiter.mp4') }}" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="planetInfo">
+                            <h2>Do you know which planet it is?</h2>
+                            <h2>Well, this is Jupiter the Gas Giant!</h2>
+                            <p>Jupiter, the fifth planet from the Sun, is the largest planet in our Solar System, more massive than all the other planets combined. It is a gas giant, primarily composed of hydrogen and helium, with no well-defined solid surface. Jupiter is famous for its Great Red Spot, a giant storm larger than Earth that has been raging for centuries. The planet has a strong magnetic field and at least 79 moons, including the four largest—Io, Europa, Ganymede, and Callisto—discovered by Galileo Galilei in 1610. These Galilean moons are intriguing worlds of their own, with diverse characteristics and potential for subsurface oceans. Jupiter has been studied extensively by missions such as NASA's Juno, which is providing detailed data on its atmosphere, magnetic field, and interior structure.</p>
+                        </div>
+                    </div>
+                    <div class="astro">Astrological Beliefs</div>
+                    <div class="liveUpdates">Live Updates</div>
+                </div>
+                <div class="parent">
+                    <div class="PlanetContents">
+                        <div class="planetImage">
+                            <video autoplay loop muted>
+                                <source src="{{ url_for('static', filename='images/saturn.mp4') }}" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="planetInfo">
+                            <h2>Do you know which planet it is?</h2>
+                            <h2>Well, this is Saturn the Ringed Giant!</h2>
+                            <p>Saturn, the sixth planet from the Sun, is renowned for its stunning ring system, the most extensive and complex in the Solar System. Like Jupiter, Saturn is a gas giant composed mainly of hydrogen and helium. Its rings are made up of ice particles, rocky debris, and dust. Saturn has at least 82 moons, with Titan being the largest and one of the most Earth-like bodies in the Solar System, featuring lakes and rivers of liquid methane and ethane. The Cassini mission, which orbited Saturn from 2004 to 2017, provided a wealth of data about the planet, its rings, and moons, revealing insights into its atmospheric dynamics, magnetic field, and the intriguing geology of Titan and Enceladus, another moon with a subsurface ocean.</p>
+                        </div>
+                    </div>
+                    <div class="astro">Astrological Beliefs</div>
+                    <div class="liveUpdates">Live Updates</div>
+                </div>
+                <div class="parent">
+                    <div class="PlanetContents">
+                        <div class="planetImage">
+                            <video autoplay loop muted>
+                                <source src="{{ url_for('static', filename='images/uranus.mp4') }}" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="planetInfo">
+                            <h2>Do you know which planet it is?</h2>
+                            <h2>Well, this is Uranus the Ice Giant!</h2>
+                            <p>Uranus, the seventh planet from the Sun, is an ice giant with a unique sideways rotation, tilted at an angle of about 98 degrees. This tilt causes extreme seasonal variations, with each pole getting around 42 years of continuous sunlight followed by 42 years of darkness. Uranus has a cold atmosphere composed mainly of hydrogen, helium, and methane, which gives it a pale blue color. It has at least 27 moons and a faint ring system. Uranus was visited by only one spacecraft, Voyager 2, in 1986, which provided the first close-up images and data on the planet, its rings, and moons. The planet's unusual characteristics make it a subject of interest for future missions to understand more about its formation and internal structure.</p>
+                        </div>
+                    </div>
+                    <div class="astro">Astrological Beliefs</div>
+                    <div class="liveUpdates">Live Updates</div>
+                </div>
+                <div class="parent">
+                    <div class="PlanetContents">
+                        <div class="planetImage">
+                            <video autoplay loop muted>
+                                <source src="{{ url_for('static', filename='images/neptune.mp4') }}" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="planetInfo">
+                            <h2>Do you know which planet it is?</h2>
+                            <h2>Well, this is Neptune the Windy Giant!</h2>
+                            <p>Neptune, the eighth and farthest known planet from the Sun, is an ice giant with a deep blue color due to the presence of methane in its atmosphere. It has the strongest winds in the Solar System, with speeds reaching up to 2,100 kilometers per hour (1,300 miles per hour). Neptune has at least 14 moons, with Triton being the largest and geologically active, featuring geysers that erupt with nitrogen gas. Neptune was also visited by Voyager 2 in 1989, providing the first close-up images and data on the planet and its moons. The planet's dynamic atmosphere, ring system, and intriguing moon Triton continue to be subjects of interest for planetary scientists.</p>
+                        </div>
+                    </div>
+                    <div class="astro">Astrological Beliefs</div>
+                    <div class="liveUpdates">Live Updates</div>
+                    
+                </div>
+            </div>
+            
+            <div id="star1" class="section">
+                <h2>Hey I am a star!</h2>
+            </div>
+            <div id="sun1" class="section">
+                <h2>Hey I am the sun!</h2>
+            </div>
+            <div id="cosmo1" class="section">
+                <h2>Hey I am the cosmos!</h2>
+            </div>
+
+            
+            <div class="chatbot-button">
+                <button id="openChat">Chat with StellarScope Bot</button>
+            </div>
+
+            
+            <div id="chatWindow" class="chatBot">
+                <div class="chatArea" id="chat-box">
+                    <!-- Chat messages go here -->
+                </div>
+                <div class="inputArea">
+                    <input type="text" id="user-input" placeholder="Type your message...">
+                    <div class="chatIcon">
+                        <img src="{{ url_for('static', filename='images/chatbot.JPG') }}" alt="Chat Icon">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
