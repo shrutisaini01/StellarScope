@@ -226,22 +226,34 @@ h4 {
 }
 
 .astro, .liveUpdates {
+    /* background-color: red; */
     color: white;
     margin-left: 160px;
-    margin-bottom: 8px;
+    margin-bottom: 18px;
     font-size: larger;
+    width: 600px;
+}
+
+.astro h6,
+.liveUpdates h6 {
+    font-size: 28px;
+    padding: 5px;
+    color: goldenrod;
 }
 
 .chatBot {
+    /* background-color: white; */
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    /* position: relative; */
+    position: relative;
 }
 
 .chatArea, .askANDanswer {
+    /* background-color: red; */
+    width: 590px;
     padding: 15px 30px;
     display: flex;
     flex-direction: column;
