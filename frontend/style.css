@@ -126,6 +126,8 @@ h3 {
 .videoOverlay h2 {
     font-size: 2em;
     color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .videoOverlay p {

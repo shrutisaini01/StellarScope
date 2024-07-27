@@ -43,7 +43,7 @@
     margin: 32px auto;
 }
 
-.sunContent p {
+.sunContent p, .extraInfo p {
     color: white;
     font-size: 23px;
     text-align: left;
@@ -54,4 +54,73 @@
 
 .sunImage video {
     margin-top: 40px;
+}
+
+.section h3 {
+    color: aqua;
+    font-family: "Dancing Script";
+    text-align: center;
+    font-size: 44px;
+    margin-top: 20px;
+}
+
+.constellation {
+    display: flex;
+}
+
+.videoOfPattern video {
+    width: 500px;
+    height: 500px;
+    margin-top: 36px;
+    margin-left: 89px;
+}
+
+.information p{
+    margin-left: 210px;
+    margin-right: 200px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.distance label {
+    display: block;
+    margin-top: 5px;
+}
+
+.distance input {
+    width: 260px;
+    padding: 5px;
+    margin-top: 5px;
+    height: 30px;
+    margin-left: 630px;
+    border: 2px solid white;
+    border-radius: 18px;
+}
+
+.distance input:focus{
+    border: 2px solid white;
+}
+
+.distance button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 108px;
+    border: 2px solid white;
+    border-radius: 18px;
+    margin-left: 710px;
+    height: 40px;
+}
+
+.distance button:hover {
+    background-color: violet;
+    color: black;
+}
+
+.result {
+    margin-top: 10px;
 }

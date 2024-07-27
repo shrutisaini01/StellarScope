@@ -1,17 +1,16 @@
 from flask import Flask, request, jsonify, render_template
 from openai import OpenAI
-from .env import load_dotenv
+import os
+from dotenv import load_dotenv
 
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
 openai_client = OpenAI(api_key=openai_api_key)
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../frontend', template_folder='../frontend')
 
 @app.route('/')
 def index():
     return render_template('index.html')
-
-
 
 @app.route('/chatbot', methods=['POST'])
 def chatbot():
@@ -25,13 +24,10 @@ def chatbot():
     except Exception as e:
         return jsonify({'error': str(e)}), 500  # Returning (body, status)
 
-
 def get_openai_response(user_query):
     system_prompt = """ 
-    You are a helpful and will provide the all the information related to space solar system
-
-
- """
+    You are a helpful assistant who will provide all the information related to the space solar system.
+    """
 
     messages = [
         {"role": "system", "content": system_prompt},
@@ -39,19 +35,11 @@ def get_openai_response(user_query):
     ]
 
     response = openai_client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-4",
         messages=messages
     )
 
-    query_str = response.choices[0].message.content.strip()
-    print(query_str)
     return response.choices[0].message.content.strip()
-
-
-
-
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)
