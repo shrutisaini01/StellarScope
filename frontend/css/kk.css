@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: green;
+}
+
+.pages {
+    display: flex;
+    justify-content: flex-end; /* Align the items to the right */
+    margin-right: 100px;
+    font-size: 20px;
+    padding: 50px;
+}
+
+/* Ensure list items are displayed side by side */
+.pages ol {
+    display: flex; /* This makes the list items display in a row */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* List item styling */
+.pages li {
+    margin-right: 20px; /* Add space between the list items */
+    list-style: none; /* Remove list bullet points */
+}
+
+/* Styling for the links */
+.pages a {
+    color: white; /* White color for the text */
+    text-decoration: none; /* Remove default underline */
+    font-size: 30px; /* Maintain font size */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.pages a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+    transform: scale(0.95); /* Slightly zoom out on hover */
+    font-size: 35px;
+}
+
+
+h6 {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.asteroidUpdates {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.options {
+    margin: 20px 0;
+}
+
+.options label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.options input {
+    padding: 8px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#asteroid-data {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f4f4f4;
+    color: black;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}

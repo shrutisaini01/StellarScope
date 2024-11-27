@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroid Updates</title>
+    <link rel="stylesheet" href="css/kk.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" hre="css/style.css">
+    <link rel="icon" href="../images/ast.ico" type="image/x-icon">
+    <div class="pages">
+        <ol>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="index2.html">Live Updates</a></li>
+        </ol>
+    </div>
+</head>
+<body>
+    <div class="asteroidUpdates">
+        <h6>Asteroid Updates</h6>
+        <div class="options">
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date"><br><br>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date"><br><br>
+
+            <button onclick="fetchAsteroids()">Get Asteroid Data</button>
+        </div>
+        <div id="asteroid-data">
+            <!-- Asteroid data will be displayed here -->
+        </div>
+    </div>
+    </div>
+
+    <script src="js/kk.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
