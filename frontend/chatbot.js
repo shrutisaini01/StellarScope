@@ -52,9 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Display loading while fetching AI response
         displayLoading();
 
-        // Send the message to the backend
         try {
-            const response = await fetch('http://localhost:8000/chatbot', {
+            // Dynamically determine the port
+            const port = location.protocol === 'https:' ? 8000 : 8085;
+            const response = await fetch(`http://localhost:${port}/chatbot`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message }),

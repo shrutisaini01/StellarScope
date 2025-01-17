@@ -3,12 +3,15 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const path = require('path');
 const fetch = require('node-fetch');
+const cors = require('cors');  // Import cors package
+
 
 // Load environment variables
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const app = express();
-const port = process.env.PORT || 3500;
+const port = process.env.PORT || process.env.PORT2;
+app.use(cors({ origin: '*' }));  // Allow all origins, adjust as needed
 const NASA_API_KEY = process.env.NASA_API_KEY;
 GROQ_API_KEY = process.env.GROQ_API_KEY;
 
