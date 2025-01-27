@@ -18,21 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // script.js
 
-document.getElementById("toggle").addEventListener("click", function() {
-    // Get the body element
-    const body = document.body;
-
-    // Toggle between dark-mode and day-mode classes
-    if (body.classList.contains("dark-mode")) {
-        body.classList.remove("dark-mode");
-        body.classList.add("day-mode");
-        this.textContent = "Switch to Dark Mode";
-    } else {
-        body.classList.remove("day-mode");
-        body.classList.add("dark-mode");
-        this.textContent = "Switch to Day Mode";
-    }
-});
-
 
 });

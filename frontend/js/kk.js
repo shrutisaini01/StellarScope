@@ -29,8 +29,7 @@ async function fetchAsteroids() {
 
 function displayAsteroids(asteroids) {
     const asteroidDataContainer = document.getElementById('asteroid-data');
-    asteroidDataContainer.innerHTML = ''; // Clear previous results
-
+    asteroidDataContainer.innerHTML = ''; 
     const asteroidList = document.createElement('ul');
 
     for (const date in asteroids) {

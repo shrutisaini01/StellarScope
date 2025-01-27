@@ -3,25 +3,21 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const path = require('path');
 const fetch = require('node-fetch');
-const cors = require('cors');  // Import cors package
+const cors = require('cors');  
 
-
-// Load environment variables
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const app = express();
 const port = process.env.PORT || process.env.PORT2;
-app.use(cors({ origin: '*' }));  // Allow all origins, adjust as needed
+app.use(cors({ origin: '*' }));  
 const NASA_API_KEY = process.env.NASA_API_KEY;
 GROQ_API_KEY = process.env.GROQ_API_KEY;
 
-// Middleware to parse JSON
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '..', 'frontend')));
 app.use('/images', express.static(path.join(__dirname, '..', 'images')));
 
-// Chatbot route
 app.post('/chatbot', async (req, res) => {
     try {
         const user_input = req.body.message;
@@ -56,7 +52,6 @@ app.post('/chatbot', async (req, res) => {
     }
 });
 
-// Asteroid data route
 app.post('/fetch-asteroids', async (req, res) => {
     try {
         const { startDate, endDate } = req.body;
@@ -81,10 +76,9 @@ app.post('/fetch-asteroids', async (req, res) => {
     }
 });
 
-// Function to display asteroid data on frontend
 function displayAsteroids(asteroids) {
     const asteroidDataContainer = document.getElementById('asteroid-data');
-    asteroidDataContainer.innerHTML = ''; // Clear previous results
+    asteroidDataContainer.innerHTML = ''; 
 
     const asteroidList = document.createElement('ul');
 

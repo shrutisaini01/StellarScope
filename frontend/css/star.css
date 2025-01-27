@@ -17,7 +17,8 @@
 }
 
 .starImage img {
-    width: 336px;
+    width: 100%;
+    max-width: 336px;
     height: 198px;
     margin-top: 148px;
     margin-left: 150px; 
